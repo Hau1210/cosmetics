@@ -1,0 +1,135 @@
+@import "~bootstrap/scss/bootstrap";
+.header-container {
+  height: 100px;
+
+  width: 100%;
+  display: flex;
+
+  background: linear-gradient(
+    (rgb(231, 144, 173) 30%, rgb(243, 201, 112) 100%)
+  );
+  .content-product {
+    margin-left: 10px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+  
+  }
+  .header-content {
+    height: 40px;
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    .header-content-nav1 {
+      margin: 5px;
+      margin-left: 130px;
+      width: 250px;
+      text-align: center;
+      .header-content-phone{
+       margin-left: 80px;
+       text-decoration: none;
+       color: black;
+      }
+    }
+    .header-content-nav2 {
+      margin: 5px;
+      margin-left: 40px;
+      width: 700px;
+    }
+    .header-content-nav3 {
+      margin: 5px;
+      margin-right: 20px;
+      margin-left: 100px;
+      width: 250px;
+      display: flex;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .container-login {
+        margin-left: 100px;
+      }
+    }
+  }
+  .header-content-1 {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+
+    
+    .content-search {
+      margin: 5px;
+      margin-left: 400px;
+      width: 600px;
+     
+    }
+    .content-cart {
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 150px;
+      width: 250px;
+      display: flex;
+      .content-iconcart {
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        margin-right: 30px;
+      
+      }
+      
+      
+    }
+  }
+}
+.content-banner {
+  display: flex;
+  width: 100%;
+  height: 555px;
+
+  .content-banner-left {
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(
+      (135deg,rgb(240, 192, 192) 30%, rgb(247, 245, 168) 100%)
+    );
+  
+     .banner-left-header{
+       display: flex;
+       border-bottom: 1px solid pink;
+       width:100%;
+       .header-banner-left{
+         width: 80%;
+         height: 50px;
+         font-weight: bold;
+         margin-left: 10px;
+       }
+       .icon-banner-left{
+        margin-left: 15px;
+       }
+   
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    li {
+      list-style-type: none; 
+      border-bottom: 1px solid pink;
+      font-size: 15px;
+      width: 100%;
+      height: 50px;
+      margin-top: 10px;
+    }
+    
+  }
+  .content-banner-center {
+    width: 75%;
+    height: 500px;
+    
+  }
+}
