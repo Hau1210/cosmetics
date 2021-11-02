@@ -1,21 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
+body {
+  background-color: rgb(245, 233, 235);
+}
 .header-container {
-  height: 100px;
-
+  height: 90px;
   width: 100%;
   display: flex;
-
   background: linear-gradient(
     (rgb(231, 144, 173) 30%, rgb(243, 201, 112) 100%)
   );
   .content-product {
-    margin-left: 10px;
+    margin-left: 70px;
     width: 250px;
     height: 50px;
     display: flex;
     text-align: center;
-    margin-top: 20px;
-  
+    margin-top: 20px;  
   }
   .header-content {
     height: 40px;
@@ -58,15 +58,12 @@
     height: 30px;
     position: absolute;
     width: 100%;
-    margin-top: 40px;
-    display: flex;
-
-    
+    margin-top: 35px;
+    display: flex;  
     .content-search {
       margin: 5px;
       margin-left: 400px;
-      width: 600px;
-     
+      width: 600px;     
     }
     .content-cart {
       margin-top: 20px;
@@ -78,41 +75,110 @@
         font-size: 25px;
         text-decoration: none;
         color: black;
-        margin-right: 30px;
-      
-      }
-      
+        margin-right: 30px;    
+      }  
+    }
+    .user {
+      position: relative;
+      display: inline-block;
       
     }
+    .menu-user {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .menu-user a:hover {background-color: rgb(243, 202, 202);}
+
+    .user:hover .menu-user {display: block;}
+
+    .user:hover .login-user {background-color: #f0bec6;}
+  }
+}
+.banner-nav{
+  display: flex;
+  width:100%;
+  height: 40px;
+  background: linear-gradient(
+    (135deg,rgb(230, 225, 225) 30%, rgb(245, 233, 235) 100%)
+  );
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .banner-left-header{
+    margin-top: 5px;
+    display: flex;
+    width: 15%;
+   
+    .header-banner-left{
+      font-weight: bold;
+      margin-left: 5px;
+    }
+    .icon-banner-left{
+     margin-left: 20px;
+    }
+    .banner-nav-product{
+      width: 750px; 
+    }
+
+ }
+  ul, li {
+    list-style-type: none; 
+    display: flex;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 50px;
+  }  
+  .banner-nav-QR {
+    margin-left: 300px;
+    margin-top: 8px;
+    font-size: 16px;
   }
 }
 .content-banner {
   display: flex;
   width: 100%;
-  height: 555px;
-
+  height: 538px;
   .content-banner-left {
     width: 15%;
     height: 100%;
     background: linear-gradient(
-      (135deg,rgb(240, 192, 192) 30%, rgb(247, 245, 168) 100%)
-    );
-  
-     .banner-left-header{
-       display: flex;
-       border-bottom: 1px solid pink;
-       width:100%;
-       .header-banner-left{
-         width: 80%;
-         height: 50px;
-         font-weight: bold;
-         margin-left: 10px;
-       }
-       .icon-banner-left{
-        margin-left: 15px;
-       }
-   
+      (135deg,rgb(241, 203, 203) 30%, rgb(247, 245, 203) 100%)
+    ); 
+    .makeup {
+      position: relative;
+      display: inline-block;
+      
     }
+    .menu-makeup {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .menu-makeup a:hover {background-color: rgb(243, 202, 202);}
+
+    .makeup:hover .menu-makeup {display: block;}
+
+    .makeup:hover .Name_makeup {background-color: #f0bec6;}
     a {
       text-decoration: none;
       color: black;
@@ -124,12 +190,196 @@
       width: 100%;
       height: 50px;
       margin-top: 10px;
-    }
-    
+    }  
   }
   .content-banner-center {
     width: 75%;
-    height: 500px;
-    
+    height: 500px; 
+  }
+  .content-banner-right {
+    margin: 150px 70px;
+    .banner-right-link{
+      border: 1px solid rgb(181, 187, 192);
+      border-radius: 20px;
+      width: 40px;
+      height: 150px;
+      background-color: rgb(181, 187, 192);
+    }
+    .banner-right-chat{
+      margin-top: 50px;
+    }
+  }
+}
+.banner-productHot{
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 100%;
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
+  }
+}
+.banner-productTrademark{
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 100%;
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
+  }
+}
+.banner-productMakeUp {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 80%;
+  width: 100%;
+  .makeUp{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 76%;
+    border-radius: 7px;
+    background: linear-gradient(
+      (rgb(241, 203, 203) 30%, rgb(247, 245, 203) 100%)
+    );
+    h5 {
+      margin-top: 10px;
+    }
+    ul, li,a {
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+      display: flex;
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
+  }
+}
+.banner-productSKinCare {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 70%;
+  width: 100%;
+  .skincare{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 76%;
+    border-radius: 7px;
+    background: linear-gradient(
+      (rgb(241, 203, 203) 30%, rgb(247, 245, 203) 100%)
+    );
+    h5 {
+      margin-top: 10px;
+    }
+    ul, li,a {
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+      display: flex;
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
+  }
+}
+.banner-productBody {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 70%;
+  width: 100%;
+  .body{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 76%;
+    border-radius: 7px;
+    background: linear-gradient(
+      (rgb(241, 203, 203) 30%, rgb(247, 245, 203) 100%)
+    );
+    h5 {
+      margin-top: 10px;
+    }
+    ul, li,a {
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+      display: flex;
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
+  }
+}
+.banner-productHair {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 70%;
+  width: 100%;
+  .hair{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 76%;
+    border-radius: 7px;
+    background: linear-gradient(
+      (rgb(241, 203, 203) 30%, rgb(247, 245, 203) 100%)
+    );
+    h5 {
+      margin-top: 10px;
+    }
+    ul, li,a {
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+      display: flex;
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
+  }
+}
+.banner-productPerfume {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 70%;
+  width: 100%;
+  .Perfume{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 76%;
+    border-radius: 7px;
+    background: linear-gradient(
+      (rgb(241, 203, 203) 30%, rgb(247, 245, 203) 100%)
+    );
+    h5 {
+      margin-top: 10px;
+    }
+    ul, li,a {
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+      display: flex;
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+  .tab_1{
+    display: flex;
+    margin-left: 150px;
   }
 }
